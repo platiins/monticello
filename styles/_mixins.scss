@@ -1,0 +1,28 @@
+// adding bg-img:
+@mixin bg-image($bgImgHeight, $bgImgUrl) {
+  width: 100vw;
+  height: $bgImgHeight;
+  background-image: $bgImgUrl;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+// display: flex
+@mixin flex($flexFlow, $justifyContent, $alignItems, $flexGap) {
+  display: flex;
+  flex-flow: $flexFlow;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  gap: $flexGap;
+}
+
+//  icons style:
+@mixin iconsStyle {
+  border: 1px solid #ffffff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  align-content: center;
+}
