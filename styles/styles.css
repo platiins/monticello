@@ -167,7 +167,7 @@ body ul a {
 }
 .second-page__article1--text {
   margin: 0 200px 0 330px;
-  width: calc(100% - 845px);
+  width: calc(100% - 350px);
 }
 .second-page__article2 {
   display: flex;
@@ -179,7 +179,7 @@ body ul a {
 }
 .second-page__article2--text {
   margin: 0 300px 0 200px;
-  width: calc(100% - 845px);
+  width: calc(100% - 350px);
 }
 .second-page__article2--visuals {
   width: 845px;
@@ -206,11 +206,19 @@ body ul a {
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
+  line-height: 30px;
+  margin: 20px 0 40px;
 }
-.second-page .article-text button {
+.second-page .article-text .more-details-btn {
+  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
   text-align: center;
+  width: 190px;
+  height: 50px;
+  border: 1px solid #2c4058;
+  background-color: #ffffff;
+  margin-bottom: 60px;
 }
 .second-page .article-text .location {
   font-family: "Open Sans";
