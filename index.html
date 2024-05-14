@@ -19,7 +19,7 @@
   <body>
     <header id="page-header"></header>
     <main id="page-main">
-      <section class="first-page">
+      <section id="first-page" class="first-page">
         <section class="first-page__content">
           <nav>
             <div class="nav-logo">
@@ -28,11 +28,11 @@
             <ul class="nav-list">
               <li>
                 <div class="li-point"></div>
-                <a href="ranndom.html">ABOUT US</a>
+                <a href="#first-page">ABOUT US</a>
               </li>
               <li>
                 <div class="li-point"></div>
-                <a href="">PROJECTS</a>
+                <a href="#second-page">PROJECTS</a>
               </li>
               <li>
                 <div class="li-point"></div>
@@ -67,6 +67,65 @@
             <i class="fa-solid fa-angle-down fa-lg"></i>
           </div>
         </section>
+      </section>
+      <section id="second-page" class="second-page">
+        <div class="second-page__title-box">
+          <div class="second-page__title-box--line"></div>
+          <h2 class="second-page__title-box--title">WHAT WE DO</h2>
+        </div>
+        <div class="second-page__article1">
+          <!-- first article visuals -->
+          <section class="second-page__article1--visuals">
+            <div>
+              <img
+                src="./assets/img/trade-center.png"
+                alt="trade-center"
+                class="article1-img"
+              />
+            </div>
+          </section>
+          <!-- first article text -->
+          <article class="second-page__article1--text article-text">
+            <h4>ONE WORLD</h4>
+            <h3>TRADE CENTER</h3>
+            <p>
+              Increasing prosperity in our lives can be accomplished by having
+              the right frame of mind. The truth is, our thoughts are very
+              powerful.
+            </p>
+            <button type="button">MORE DETAILS</button>
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i>
+              New York City, United States - 1776 feet
+            </p>
+          </article>
+        </div>
+        <!-- second article text -->
+        <div class="second-page__article2">
+          <article class="second-page__article2--text article-text">
+            <h4>INTERNATIONAL</h4>
+            <h3>COMMERCE CENTER</h3>
+            <p>
+              Successful businesses have many things in common, today we'll look
+              at the big 'R' of recognition and how a digital advertising
+              network may help.
+            </p>
+            <button type="button">MORE DETAILS</button>
+            <p class="location">
+              <i class="fa-solid fa-location-dot"></i>
+              Hong Kong - 1588 feet
+            </p>
+          </article>
+          <!-- second article visuals -->
+          <section class="second-page__article2--visuals">
+            <div>
+              <img
+                src="./assets/img/commerce-center.png"
+                alt="commerce-center"
+              />
+            </div>
+          </section>
+        </div>
       </section>
     </main>
   </body>

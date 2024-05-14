@@ -44,7 +44,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #ffffff;
-  overflow-y: hidden;
+  overflow-x: hidden;
 
   ul {
     list-style: none;
@@ -56,12 +56,11 @@ body {
 }
 
 // first page:
-
 .first-page {
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
 
   &__content {
-    @include bg-image(1064px, url(../assets/img/hero.png));
+    @include bg-image(100vh, url(../assets/img/hero.png));
     text-align: center;
 
     nav {
@@ -108,20 +107,122 @@ body {
       margin-top: 225px;
       font-size: 80px;
       font-weight: 700;
-      line-height: 97.52px;
       letter-spacing: 0.1em;
     }
 
     &--subtitle {
-      margin: 20px 0 225px;
+      margin: 40px 0 225px;
       font-size: 18px;
-      line-height: 21.94px;
       letter-spacing: 0.3em;
     }
 
     .scroll-icon {
       @include iconsStyle;
       margin: 0 auto 50px auto;
+    }
+  }
+}
+
+// second page:
+.second-page {
+  color: #2c4058;
+
+  &__title-box {
+    @include flex(column, space-between, center, 30px);
+    margin: 100px 0 90px 0;
+
+    &--line {
+      width: 100px;
+      border-top: 1px solid #2c4058;
+    }
+
+    &--title {
+      font-size: 44px;
+      font-weight: 700;
+      text-align: center;
+      color: #2c4058;
+    }
+  }
+
+  &__article1 {
+    @include flex(row, space-between, center, 0);
+    margin-bottom: 140px;
+
+    &--visuals {
+      width: 845px;
+
+      div {
+        width: 585px;
+        height: 470px;
+        background-color: #55b7ff;
+
+        img {
+          width: 630px;
+          height: 470px;
+          transform: translate(215px, 57px);
+        }
+      }
+    }
+
+    &--text {
+      margin: 0 200px 0 330px;
+      width: calc(100% - 845px);
+    }
+  }
+
+  &__article2 {
+    @include flex(row, space-between, center, 0);
+    margin-bottom: 140px;
+
+    &--text {
+      margin: 0 300px 0 200px;
+      width: calc(100% - 845px);
+    }
+
+    &--visuals {
+      width: 845px;
+
+      div {
+        width: 585px;
+        height: 470px;
+        background-color: #7e5aff;
+
+        img {
+          width: 630px;
+          height: 470px;
+          transform: translate(-215px, 57px);
+        }
+      }
+    }
+  }
+
+  .article-text {
+    h4 {
+      font-size: 22px;
+      margin-top: 150px;
+    }
+
+    h3 {
+      font-size: 44px;
+      font-weight: 700;
+    }
+
+    p {
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    button {
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .location {
+      font-family: "Open Sans";
+      font-size: 15px;
+      font-style: italic;
     }
   }
 }

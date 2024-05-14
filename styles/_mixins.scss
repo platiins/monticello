@@ -1,6 +1,6 @@
 // adding bg-img:
 @mixin bg-image($bgImgHeight, $bgImgUrl) {
-  width: 100vw;
+  width: 100%;
   height: $bgImgHeight;
   background-image: $bgImgUrl;
   background-position: center;
