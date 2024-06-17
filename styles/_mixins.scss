@@ -3,7 +3,7 @@
   width: 100%;
   height: $bgImgHeight;
   background-image: $bgImgUrl;
-  
+
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -25,4 +25,13 @@
   width: 40px;
   border-radius: 50px;
   align-content: center;
+}
+
+// NEWS IMG
+
+@mixin newsImg($newsImgUrl) {
+  background-image: $newsImgUrl;
+  background-size: cover;
+  width: 100%;
+  height: 45%;
 }
