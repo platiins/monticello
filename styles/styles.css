@@ -449,4 +449,48 @@ body ul a {
   justify-content: center;
   align-items: center;
   gap: 0;
+}
+
+#fifth-page {
+  position: relative;
+}
+#fifth-page #map {
+  height: 700px;
+  width: 100%;
+}
+#fifth-page .contacts {
+  width: 770px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+#fifth-page .contacts__title-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+#fifth-page .contacts__title-box--line {
+  width: 100px;
+  border-top: 1px solid #2c4058;
+}
+#fifth-page .contacts__title-box--title {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  color: #2c4058;
+}
+#fifth-page #footer {
+  width: 100%;
+  height: 550px;
+  background-image: url(../assets/img/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  background: linear-gradient(251.06deg, #7e5aff -2.19%, #55b7ff 103.21%);
 }/*# sourceMappingURL=styles.css.map */

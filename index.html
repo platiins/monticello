@@ -17,13 +17,19 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
-
+    <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <!-- Slick Slider -->
     <script type="text/javascript" src="slick/slick.min.js" defer></script>
+    <!-- Google Maps API -->
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2mcE0rteb0UJR84UlJRYWktfmBdn9Oz8&loading=async&callback=initMap"
+    ></script>
     <script src="main.js" defer></script>
   </head>
   <body>
@@ -51,7 +57,7 @@
               </li>
               <li>
                 <div class="li-point"></div>
-                <a href="#fourth-page">CONTACT</a>
+                <a href="#fifth-page">CONTACT</a>
               </li>
             </ul>
             <ul class="sm-container">
@@ -323,6 +329,16 @@
         <div class="gallery-btn-box">
           <button type="button" class="more-details-btn">SEE MORE</button>
         </div>
+      </section>
+      <section id="fifth-page">
+        <div id="map"></div>
+        <section class="contacts">
+          <div class="contacts__title-box">
+            <div class="contacts__title-box--line"></div>
+            <h2 class="contacts__title-box--title">GET IN TOUCH</h2>
+          </div>
+        </section>
+        <footer id="footer"></footer>
       </section>
     </main>
   </body>

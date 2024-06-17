@@ -463,3 +463,46 @@ body {
     @include flex(row, center, center, 0);
   }
 }
+
+// FIFTH PAGE
+
+#fifth-page {
+  position: relative;
+
+  #map {
+    height: 700px;
+    width: 100%;
+  }
+
+  .contacts {
+    width: 770px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+
+    &__title-box {
+      @include flex(column, space-between, center, 30px);
+      margin-top: 60px;
+
+      &--line {
+        width: 100px;
+        border-top: 1px solid #2c4058;
+      }
+
+      &--title {
+        font-size: 44px;
+        font-weight: 700;
+        text-align: center;
+        color: #2c4058;
+      }
+    }
+  }
+
+  #footer {
+    @include bg-image(550px, url(../assets/img/footer.png));
+    background: linear-gradient(251.06deg, #7e5aff -2.19%, #55b7ff 103.21%);
+  }
+}
