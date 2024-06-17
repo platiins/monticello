@@ -126,6 +126,7 @@ body {
 // second page:
 .second-page {
   color: #2c4058;
+  padding-bottom: 150px;
 
   &__title-box {
     @include flex(column, space-between, center, 30px);
@@ -172,7 +173,6 @@ body {
 
   &__article2 {
     @include flex(row, space-between, center, 0);
-    margin-bottom: 140px;
 
     &--text {
       margin: 0 300px 0 200px;
@@ -181,6 +181,7 @@ body {
 
     &--visuals {
       width: 845px;
+      margin-bottom: 140px;
 
       div {
         width: 585px;
@@ -231,6 +232,103 @@ body {
       font-family: "Open Sans";
       font-size: 15px;
       font-style: italic;
+    }
+  }
+}
+
+// third-page:
+
+.third-page {
+  background: linear-gradient(237.1deg, #24ccfa 11.16%, #3c7fd4 89.18%);
+  height: 90vh;
+  position: relative;
+  padding: 150px 100px 50px;
+
+  &__bg-img {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50%;
+  }
+
+  &__title-box {
+    @include flex(column, space-between, center, 30px);
+
+    &--line {
+      width: 100px;
+      border-top: 1px solid #ffffff;
+    }
+
+    &--title {
+      font-size: 44px;
+      font-weight: 700;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .slider {
+    margin: 70px 115px 0;
+
+    .news-card {
+      width: 85%;
+      height: 500px;
+      margin: 20px 20px 70px 20px;
+      background-color: #ffffff;
+      color: #2c4058;
+      text-align: left;
+
+      &__img1 {
+        background-image: url("../assets/img/news1.png");
+        background-size: cover;
+        width: 100%;
+        height: 45%;
+      }
+
+      &__article {
+        height: 55%;
+
+        &--title {
+          font-family: "Montserrat", sans-serif;
+          font-size: 22px;
+          margin: 20px;
+          font-weight: 700;
+        }
+
+        &--text {
+          font-family: "Open Sans";
+          font-size: 18px;
+          padding: 10px 20px 15px;
+        }
+      }
+
+      &__author {
+        @include flex(row, start, center, 30px);
+        padding: 20px 40px 0;
+
+        &--img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50px;
+        }
+
+        &--details {
+          @include flex(column, center, start, 15px);
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+
+          .author-name {
+            font-size: 18px;
+          }
+
+          .article-date {
+            font-size: 14px;
+            color: #55b7ff;
+          }
+        }
+      }
     }
   }
 }
