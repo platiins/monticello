@@ -60,21 +60,23 @@
                 <a href="#fifth-page">CONTACT</a>
               </li>
             </ul>
-            <ul class="sm-container">
+            <div class="sm-container">
               <a href="">
-                <li class="sm-icon-border facebook">
+                <button class="sm-icon-border facebook">
                   <i class="fa-brands fa-facebook-f fa-lg"></i>
-                </li>
+                </button>
               </a>
-              <a href=""
-                ><li class="sm-icon-border twitter">
-                  <i class="fa-brands fa-twitter fa-lg"></i></li
-              ></a>
-              <a href=""
-                ><li class="sm-icon-border instagram">
-                  <i class="fa-brands fa-instagram fa-lg"></i></li
-              ></a>
-            </ul>
+              <a href="">
+                <button class="sm-icon-border twitter">
+                  <i class="fa-brands fa-twitter fa-lg"></i>
+                </button>
+              </a>
+              <a href="">
+                <button class="sm-icon-border instagram">
+                  <i class="fa-brands fa-instagram fa-lg"></i>
+                </button>
+              </a>
+            </div>
           </nav>
           <h1 class="first-page__content--title">SIMPLE & MODERN</h1>
           <h2 class="first-page__content--subtitle">
@@ -337,8 +339,72 @@
             <div class="contacts__title-box--line"></div>
             <h2 class="contacts__title-box--title">GET IN TOUCH</h2>
           </div>
+          <div class="contacts-info-container">
+            <div class="contacts-info">
+              <p>
+                <i class="fa-solid fa-location-dot contacts-icon"></i>91 Nolan
+                Extensions Suite 670
+              </p>
+              <p>
+                <i class="fa-solid fa-phone contacts-icon"></i>+001 356-868-2454
+              </p>
+              <p>
+                <i class="fa-solid fa-inbox contacts-icon"></i
+                >montichello@service.com
+              </p>
+              <p>
+                <i class="fa-regular fa-clock contacts-icon"></i>From 07:05AM to
+                19:30PM
+              </p>
+            </div>
+            <form class="contacts-form" method="get">
+              <label for="name"></label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="contacts-form__input"
+                placeholder="Full Name"
+              />
+              <label for="email"></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contacts-form__input"
+                placeholder="Email"
+              />
+              <button type="submit" class="more-details-btn contacts-form__submit">SUBMIT</button>
+            </form>
+          </div>
         </section>
-        <footer id="footer"></footer>
+        <footer id="footer" class="footer">
+          <section>
+            <div class="footer__flex-container">
+              <div class="footer-logo">
+                <img src="./assets/img/Logo.png" alt="logo" />
+              </div>
+              <div class="sm-container">
+                <a href="">
+                  <button class="sm-icon-border facebook">
+                    <i class="fa-brands fa-facebook-f fa-lg"></i>
+                  </button>
+                </a>
+                <a href="">
+                  <button class="sm-icon-border twitter">
+                    <i class="fa-brands fa-twitter fa-lg"></i>
+                  </button>
+                </a>
+                <a href="">
+                  <button class="sm-icon-border instagram">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <p class="copyrights">Copyrights © 2020 Montichello</p>
+          </section>
+        </footer>
       </section>
     </main>
   </body>

@@ -38,6 +38,23 @@ body ul a {
   color: inherit;
 }
 
+.sm-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.sm-container a button {
+  border: 1px solid #ffffff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  align-content: center;
+  background-color: transparent;
+  color: #ffffff;
+}
+
 .first-page {
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
 }
@@ -88,20 +105,6 @@ body ul a {
 .first-page__content nav .nav-list li:hover .li-point {
   background-color: #ffffff;
 }
-.first-page__content nav .sm-container {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-.first-page__content nav .sm-container a li {
-  border: 1px solid #ffffff;
-  height: 40px;
-  width: 40px;
-  border-radius: 50px;
-  align-content: center;
-}
 .first-page__content--title {
   margin-top: 225px;
   font-size: 80px;
@@ -119,6 +122,8 @@ body ul a {
   width: 40px;
   border-radius: 50px;
   align-content: center;
+  background-color: transparent;
+  color: #ffffff;
   margin: 0 auto 50px auto;
 }
 
@@ -358,7 +363,7 @@ body ul a {
 }
 
 .fourth-page {
-  padding-top: 100px;
+  padding: 100px 50px;
   height: 100vh;
 }
 .fourth-page__title-box {
@@ -466,6 +471,8 @@ body ul a {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
+  padding: 60px 60px 0;
+  box-sizing: border-box;
 }
 #fifth-page .contacts__title-box {
   display: flex;
@@ -473,7 +480,6 @@ body ul a {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  margin-top: 60px;
 }
 #fifth-page .contacts__title-box--line {
   width: 100px;
@@ -484,13 +490,83 @@ body ul a {
   font-weight: 700;
   text-align: center;
   color: #2c4058;
+  margin-bottom: 30px;
 }
-#fifth-page #footer {
+#fifth-page .contacts-info-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 20px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #2c4058;
+  padding-top: 10px;
+}
+#fifth-page .contacts-info-container .contacts-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+  width: 50%;
+}
+#fifth-page .contacts-info-container .contacts-icon {
+  margin-right: 20px;
+  color: #7e5aff;
+  transition-duration: 500ms;
+}
+#fifth-page .contacts-info-container .contacts-icon:hover {
+  transform: scale(1.3);
+  transition-duration: 500ms;
+}
+#fifth-page .contacts-info-container .contacts-form {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  align-items: end;
+  gap: 5px;
+}
+#fifth-page .contacts-info-container .contacts-form__input {
+  border: none;
+  border-bottom: 1px solid #2c4058;
+  outline: none;
+  background-color: transparent;
+  width: 85%;
+  height: 40px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+#fifth-page .contacts-info-container .contacts-form__submit {
+  width: 140px;
+  margin-top: 30px;
+}
+#fifth-page .footer {
   width: 100%;
   height: 550px;
   background-image: url(../assets/img/footer.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
   background: linear-gradient(251.06deg, #7e5aff -2.19%, #55b7ff 103.21%);
+}
+#fifth-page .footer__flex-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  width: 770px;
+}
+#fifth-page .footer .copyrights {
+  margin-top: 40px;
+  font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */
