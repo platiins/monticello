@@ -54,6 +54,9 @@ body ul a {
   background-color: transparent;
   color: #ffffff;
 }
+.sm-container a button:hover {
+  box-shadow: 0 0 20px #ffffff;
+}
 
 .first-page {
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
@@ -125,6 +128,9 @@ body ul a {
   background-color: transparent;
   color: #ffffff;
   margin: 0 auto 50px auto;
+}
+.first-page__content .scroll-icon:hover {
+  box-shadow: 0 0 20px #ffffff;
 }
 
 .second-page {
