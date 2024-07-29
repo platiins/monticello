@@ -3,6 +3,15 @@ $(() => {
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+
+    responsive: [
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
 });
 

@@ -1,0 +1,58 @@
+@media (max-width: 1500px) {
+  .sm-container {
+    display: none;
+  }
+  .second-page {
+    margin-bottom: 50px;
+  }
+  .second-page__title-box {
+    margin-bottom: 90px;
+  }
+  .second-page__article1 {
+    margin-bottom: 50px;
+  }
+  .second-page__article1--visuals div {
+    width: 40vw;
+    background-image: url(../assets/img/trade-center.png);
+    background: no-repeat cover left;
+  }
+  .second-page__article1--visuals div img {
+    display: none;
+  }
+  .second-page__article1--text {
+    width: 55%;
+    padding: 0 50px 50px;
+  }
+  .second-page__article2--text {
+    width: 50%;
+  }
+  .second-page__article2--visuals {
+    width: 40%;
+  }
+  .second-page__article2--visuals div {
+    background: no-repeat cover left;
+    background-image: url(../assets/img/commerce-center.png);
+  }
+  .second-page__article2--visuals div img {
+    display: none;
+  }
+  .second-page .article-text h4 {
+    font-size: 20px;
+  }
+  .second-page .article-text h3 {
+    font-size: 40px;
+  }
+  .second-page .article-text .location {
+    font-size: 12px;
+  }
+  .third-page {
+    padding: 100px 20px 130px;
+  }
+  .fourth-page .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "first first" "first first" "second third" "fourth fifth";
+    max-width: 600px;
+    height: 800px;
+  }
+}/*# sourceMappingURL=responsivness.css.map */

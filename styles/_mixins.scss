@@ -1,9 +1,7 @@
 // adding bg-img:
 @mixin bg-image($bgImgHeight, $bgImgUrl) {
-  width: 100%;
   height: $bgImgHeight;
   background-image: $bgImgUrl;
-
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -58,7 +56,7 @@
 
 // gallery picture
 
-@mixin galleryPic($gridAre, $imgUrl) {
+@mixin galleryPic($gridArea, $imgUrl) {
   grid-area: $gridArea;
   background-image: $imgUrl;
   background-position: center;

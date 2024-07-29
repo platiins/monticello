@@ -41,7 +41,7 @@
 // initial styles:
 
 body {
-  @include fontChange("Montserrat", sans-serif, 400);
+  @include fontChange("Montserrat", sans-serif, 400, inherit);
   color: #ffffff;
   overflow-x: hidden;
 
@@ -65,16 +65,21 @@ body {
 // first page:
 .first-page {
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+  min-height: 100vh;
+  height: 100%;
 
   &__content {
-    @include bg-image(100vh, url(../assets/img/hero.png));
+    @include bg-image(100%, url(../assets/img/hero.png));
+    min-height: 100vh;
     text-align: center;
+    @include flex(column, space-between, center, 50px);
 
     nav {
       @include flex(row, space-between, center, 70px);
       @include fontAdjust(14px, #ffffff);
-      padding: 50px 150px;
+      padding: 50px;
       font-family: "Source Sans 3", sans-serif;
+      width: 85%;
 
       .nav-logo {
         width: 25%;
@@ -102,21 +107,20 @@ body {
     }
 
     &--title {
-      margin-top: 225px;
       font-size: 80px;
       font-weight: 700;
       letter-spacing: 0.1em;
     }
 
     &--subtitle {
-      margin: 40px 0 225px;
+      margin-top: 50px;
       font-size: 18px;
       letter-spacing: 0.3em;
     }
 
     .scroll-icon {
       @include iconsStyle;
-      margin: 0 auto 50px auto;
+      margin-bottom: 50px;
     }
   }
 }
@@ -124,11 +128,12 @@ body {
 // second page:
 .second-page {
   color: #2c4058;
-  padding: 100px 0 150px;
+  padding: 100px 0;
+  margin-bottom: 150px;
 
   &__title-box {
     @include flex(column, space-between, center, 30px);
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 
     &--line {
       width: 100px;
@@ -143,52 +148,50 @@ body {
   }
 
   &__article1 {
-    @include flex(row, space-between, center, 0);
-    margin-bottom: 140px;
+    @include flex(row, space-between, center, 50px);
+    margin-bottom: 130px;
 
     &--visuals {
-      width: 845px;
+      max-width: 845px;
 
       div {
-        width: 585px;
         height: 470px;
+        width: 630px;
         background-color: #55b7ff;
 
         img {
           width: 630px;
           height: 470px;
-          transform: translate(215px, 57px);
+          transform: translate(200px, 57px);
         }
       }
     }
 
     &--text {
-      margin: 0 200px 0 330px;
-      width: calc(100% - 350px);
+      width: 35%;
+      padding: 100px;
     }
   }
 
   &__article2 {
-    @include flex(row, space-between, center, 0);
+    @include flex(row, space-between, center, 50px);
 
     &--text {
-      margin: 0 300px 0 200px;
-      width: calc(100% - 350px);
+      padding: 0 0 50px 100px;
+      width: 35%;
     }
 
     &--visuals {
-      width: 845px;
-      margin-bottom: 140px;
+      max-width: 845px;
 
       div {
-        width: 585px;
         height: 470px;
         background-color: #7e5aff;
 
         img {
           width: 630px;
           height: 470px;
-          transform: translate(-215px, 57px);
+          transform: translate(-200px, 57px);
         }
       }
     }
@@ -197,7 +200,7 @@ body {
   .article-text {
     h4 {
       font-size: 22px;
-      margin-top: 150px;
+      margin: 50px 0 15px;
     }
 
     h3 {
@@ -236,9 +239,8 @@ body {
 
 .third-page {
   background: linear-gradient(237.1deg, #24ccfa 11.16%, #3c7fd4 89.18%);
-  height: 90vh;
   position: relative;
-  padding: 100px 100px 50px;
+  padding: 100px 100px 130px;
 
   &__bg-img {
     position: absolute;
@@ -246,7 +248,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 50%;
+    height: 100%;
   }
 
   &__title-box {
@@ -269,7 +271,7 @@ body {
 
     .news-card {
       height: 500px;
-      margin: 20px 20px 70px 20px;
+      margin: 50px 30px 70px;
       background-color: #ffffff;
       color: #2c4058;
       text-align: left;
@@ -343,8 +345,9 @@ body {
 // FOURTH PAGE
 
 .fourth-page {
+  @include flex(column, space-between, center, 50px);
   padding: 100px 50px;
-  height: 100vh;
+  min-height: 70vh;
 
   &__title-box {
     @include flex(column, space-between, center, 30px);
@@ -368,10 +371,11 @@ body {
     grid-template-areas:
       "first first second third"
       "first first fourth fifth";
-    width: calc(100% - 300px);
     height: 500px;
-    margin: 90px 150px;
+    margin: 50px;
     gap: 15px 15px;
+    width: 80vw;
+    max-width: 1200px;
 
     .gallery-img--1 {
       @include galleryPic(first, url("../assets/img/gallery1.png"));
