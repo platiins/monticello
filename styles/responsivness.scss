@@ -3,12 +3,14 @@
 // RESPONSIVNESS
 
 @media (max-width: 1500px) {
-  // first page:
-  .sm-container {
+  // PAGE 1
+
+  .nav-icons {
     display: none;
   }
 
-  // second page:
+  // PAGE 2
+
   .second-page {
     margin-bottom: 50px;
 
@@ -71,13 +73,13 @@
     }
   }
 
-  // THIRD PAGE
+  // PAGE 3
 
   .third-page {
     padding: 100px 20px 130px;
   }
 
-  // FOURTH PAGE
+  // PAGE 4
 
   .fourth-page {
     .gallery-grid {
@@ -92,4 +94,147 @@
       height: 800px;
     }
   }
+}
+
+@media screen and (max-width: 1000px) {
+  // PAGE 1
+
+  .first-page {
+    &__content {
+      nav {
+        @include flex(row, center, center, 0);
+
+        .nav-logo {
+          width: 250px;
+          height: 50px;
+        }
+
+        .nav-list {
+          display: none;
+        }
+      }
+
+      &--title {
+        font-size: 60px;
+      }
+
+      &--subtitle {
+        font-size: 16px;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+
+  // PAGE 2
+
+  .second-page {
+    padding: 80px 0;
+    margin-bottom: 50px;
+
+    &__title-box {
+      margin-bottom: 80px;
+    }
+
+    &__article1 {
+      @include flex(row, center, center, 0);
+      margin-bottom: 80px;
+
+      &--visuals {
+        display: none;
+      }
+
+      &--text {
+        padding: 0 50px;
+        text-align: center;
+        border: 2px solid black;
+        width: 60%;
+      }
+    }
+
+    &__article2 {
+      @include flex(row, center, center, 0);
+
+      &--text {
+        padding: 0 50px;
+        text-align: center;
+        border: 2px solid black;
+        width: 60%;
+      }
+
+      &--visuals {
+        display: none;
+      }
+    }
+  }
+
+  .more-details-btn {
+    margin-bottom: 20px;
+  }
+
+  // PAGE 3
+
+  .third-page {
+    padding: 100px 30px 70px;
+
+    .slider {
+      margin: 70px auto;
+      width: 400px;
+    }
+  }
+
+  // PAGE 5
+
+  #fifth-page {
+    .contacts {
+      height: fit-content;
+      padding: 60px;
+
+      &__title-box {
+        &--title {
+          font-size: 36px;
+        }
+      }
+
+      &-info-container {
+        @include flex(column, center, center, 20px);
+        font-size: 14px;
+
+        .contacts-info {
+          @include flex(column, center, center, 20px);
+          width: 100%;
+        }
+
+        .contacts-form {
+          margin-top: 50px;
+          width: 90%;
+          @include flex(column, center, center, 10px);
+
+          &__input {
+            font-size: 14px;
+            height: 30px;
+          }
+
+          &__submit {
+            margin: 50px 0 0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .footer {
+      &__flex-container {
+        @include flex(row, space-between, center, 20px 100px);
+        margin-top: 150px;
+        flex-wrap: wrap;
+      }
+
+      .copyrights {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
 }

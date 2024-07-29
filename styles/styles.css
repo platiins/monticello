@@ -121,9 +121,10 @@ body ul a {
   font-size: 80px;
   font-weight: 700;
   letter-spacing: 0.1em;
+  margin: 0 50px;
 }
 .first-page__content--subtitle {
-  margin-top: 50px;
+  margin: 50px 50px 0;
   font-size: 18px;
   letter-spacing: 0.3em;
 }
@@ -480,10 +481,11 @@ body ul a {
 }
 #fifth-page #map {
   height: 700px;
-  width: 100%;
+  width: 100vw;
 }
 #fifth-page .contacts {
-  width: 770px;
+  width: 80%;
+  max-width: 770px;
   height: 450px;
   position: absolute;
   top: 50%;
@@ -582,9 +584,10 @@ body ul a {
   justify-content: space-between;
   align-items: center;
   gap: 100px;
-  width: 770px;
+  max-width: 770px;
+  width: 80vw;
 }
 #fifth-page .footer .copyrights {
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */

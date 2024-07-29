@@ -11,6 +11,12 @@ $(() => {
           slidesToShow: 2,
         },
       },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
     ],
   });
 });

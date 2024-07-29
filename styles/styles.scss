@@ -62,7 +62,7 @@ body {
   }
 }
 
-// first page:
+// PAGE 1
 .first-page {
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
   min-height: 100vh;
@@ -73,6 +73,8 @@ body {
     min-height: 100vh;
     text-align: center;
     @include flex(column, space-between, center, 50px);
+
+    // NAV BAR
 
     nav {
       @include flex(row, space-between, center, 70px);
@@ -110,10 +112,11 @@ body {
       font-size: 80px;
       font-weight: 700;
       letter-spacing: 0.1em;
+      margin: 0 50px;
     }
 
     &--subtitle {
-      margin-top: 50px;
+      margin: 50px 50px 0;
       font-size: 18px;
       letter-spacing: 0.3em;
     }
@@ -125,7 +128,7 @@ body {
   }
 }
 
-// second page:
+// PAGE 2
 .second-page {
   color: #2c4058;
   padding: 100px 0;
@@ -235,7 +238,7 @@ body {
   }
 }
 
-// third-page:
+// PAGE 3
 
 .third-page {
   background: linear-gradient(237.1deg, #24ccfa 11.16%, #3c7fd4 89.18%);
@@ -342,7 +345,7 @@ body {
   }
 }
 
-// FOURTH PAGE
+// PAGE 4
 
 .fourth-page {
   @include flex(column, space-between, center, 50px);
@@ -403,18 +406,19 @@ body {
   }
 }
 
-// FIFTH PAGE
+// PAGE 5
 
 #fifth-page {
   position: relative;
 
   #map {
     height: 700px;
-    width: 100%;
+    width: 100vw;
   }
 
   .contacts {
-    width: 770px;
+    width: 80%;
+    max-width: 770px;
     height: 450px;
     position: absolute;
     top: 50%;
@@ -484,6 +488,8 @@ body {
     }
   }
 
+  // FOOTER
+
   .footer {
     @include bg-image(550px, url(../assets/img/footer.png));
     @include flex(column, center, center, 0);
@@ -491,11 +497,12 @@ body {
 
     &__flex-container {
       @include flex(row, space-between, center, 100px);
-      width: 770px;
+      max-width: 770px;
+      width: 80vw;
     }
 
     .copyrights {
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 14px;
     }
   }
