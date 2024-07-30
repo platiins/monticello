@@ -120,6 +120,7 @@
   }
   .more-details-btn {
     margin-bottom: 20px;
+    color: #2c4058;
   }
   .third-page {
     padding: 100px 30px 70px;
@@ -168,6 +169,7 @@
   #fifth-page .contacts-info-container .contacts-form__submit {
     margin: 50px 0 0;
     font-size: 12px;
+    color: #2c4058;
   }
   #fifth-page .footer__flex-container {
     display: flex;
