@@ -59,6 +59,20 @@ body ul a {
   box-shadow: 0 0 20px #ffffff;
 }
 
+.page-title-blue {
+  font-size: 44px;
+  color: #2c4058;
+  font-weight: 700;
+  text-align: center;
+}
+
+.page-title-white {
+  font-size: 44px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
 .first-page {
   background: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
   min-height: 100vh;
@@ -158,12 +172,6 @@ body ul a {
 .second-page__title-box--line {
   width: 100px;
   border-top: 1px solid #2c4058;
-}
-.second-page__title-box--title {
-  font-size: 44px;
-  color: #2c4058;
-  font-weight: 700;
-  text-align: center;
 }
 .second-page__article1 {
   display: flex;
@@ -275,12 +283,6 @@ body ul a {
 .third-page__title-box--line {
   width: 100px;
   border-top: 1px solid #ffffff;
-}
-.third-page__title-box--title {
-  font-size: 44px;
-  color: #ffffff;
-  font-weight: 700;
-  text-align: center;
 }
 .third-page .slider {
   margin: 70px 115px 0;
@@ -506,13 +508,6 @@ body ul a {
   width: 100px;
   border-top: 1px solid #2c4058;
 }
-#fifth-page .contacts__title-box--title {
-  font-size: 44px;
-  color: #2c4058;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 30px;
-}
 #fifth-page .contacts-info-container {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -524,6 +519,7 @@ body ul a {
   gap: 20px;
   color: #2c4058;
   padding-top: 10px;
+  margin-top: 30px;
 }
 #fifth-page .contacts-info-container .contacts-info {
   display: flex;
