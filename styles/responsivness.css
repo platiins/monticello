@@ -189,6 +189,9 @@
   .first-page__content--title {
     font-size: 40px;
   }
+  .first-page__content nav {
+    padding: 50px 0;
+  }
   .first-page__content--subtitle {
     font-size: 14px;
   }
@@ -254,7 +257,7 @@
     margin: 10px;
   }
   #fifth-page {
-    height: 90vh;
+    height: 80vh;
   }
   #fifth-page #map {
     height: 400px;
@@ -282,8 +285,7 @@
     margin: 50px 10px;
   }
   #fifth-page .footer {
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 300px;
   }
   #fifth-page .footer__flex-container {
     display: flex;

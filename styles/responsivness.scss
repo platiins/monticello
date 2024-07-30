@@ -249,6 +249,10 @@
         font-size: 40px;
       }
 
+      nav {
+        padding: 50px 0;
+      }
+
       &--subtitle {
         font-size: 14px;
       }
@@ -359,7 +363,8 @@
   // PAGE 5
 
   #fifth-page {
-    height: 90vh;
+    height: 80vh;
+
     #map {
       height: 400px;
       width: 100vw;
@@ -391,7 +396,7 @@
     }
 
     .footer {
-      height: fit-content;
+      height: 300px;
 
       &__flex-container {
         @include flex(column, center, center, 30px);
