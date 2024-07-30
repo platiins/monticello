@@ -4,6 +4,10 @@
 
 @media (max-width: 1500px) {
   // PAGE 1
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   .nav-icons {
     display: none;
@@ -243,6 +247,11 @@
     font-size: 30px;
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   // PAGE 1
 
   .first-page {
@@ -392,6 +401,7 @@
           &__submit {
             width: 140px;
             margin: 50px 10px;
+            color: #2c4058;
           }
         }
       }
